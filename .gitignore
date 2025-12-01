@@ -1,0 +1,17 @@
+# Godot 4.x specific ignores
+.godot/
+import/
+export/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+build/
+bin/
+*.exe
+*.app
+*.apk
+*.aab
