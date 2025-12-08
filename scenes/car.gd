@@ -3,6 +3,11 @@ extends Area2D
 var direction = Vector2.LEFT
 var speed = 100
 
+func _ready() -> void:
+	if position.x < 0:
+		direction.x   = 1
+		$Sprite2D.flip_h = true
+
 func _process(delta: float) -> void:
 	position += direction * speed * delta
 

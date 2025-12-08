@@ -101,7 +101,7 @@ scale = Vector2(3, 3)
 script = ExtResource("1_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
 limit_left = 0
 limit_top = 0
 limit_right = 382

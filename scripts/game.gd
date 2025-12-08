@@ -7,6 +7,9 @@ func _on_finish_area_body_entered(body: Node2D) -> void:
 	print('has entered')
 
 func _on_car_timer_timeout() -> void:
-	var car = car_scene.instantiate()
-	car.position = Vector2(300, 250)
+	var car: Area2D = car_scene.instantiate()
+	
+	var car_spawer_pos: Marker2D = $CarSpawner.get_children().pick_random()
+	car.position = car_spawer_pos.position
+	
 	$Object.add_child(car)
