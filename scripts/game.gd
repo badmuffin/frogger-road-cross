@@ -13,3 +13,7 @@ func _on_car_timer_timeout() -> void:
 	car.position = car_spawer_pos.position
 	
 	$Object.add_child(car)
+	car.connect("body_entered", go_to_title)
+	
+func go_to_title(_body: Node2D):
+	print("Player collision")

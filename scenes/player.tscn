@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c4q6c7mxqh78h" path="res://graphics/player/player_tileset.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(10, 8.333334)
+size = Vector2(11.333334, 9.666667)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("2_g2els")
@@ -98,7 +98,10 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(3, 3)
+collision_layer = 2
+collision_mask = 13
 script = ExtResource("1_g2els")
+metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
@@ -110,7 +113,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5000001)
+position = Vector2(0, 0.16666663)
 shape = SubResource("RectangleShape2D_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
