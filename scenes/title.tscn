@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bg46h5x2n6eev"]
+[gd_scene load_steps=5 format=3 uid="uid://bg46h5x2n6eev"]
 
 [ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://fonts/Crackman.otf" id="1_4ignj"]
+[ext_resource type="Script" uid="uid://2ll1r0hgkriv" path="res://scripts/title.gd" id="1_pyl7j"]
 [ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="2_wosw1"]
 [ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="3_p6dhs"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_pyl7j")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -68,4 +70,5 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_p6dhs")
 theme_override_font_sizes/font_size = 32
-text = "High Score: 100"
+text = "100"
+horizontal_alignment = 1
