@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://r8e5vdmp0k17"]
+[gd_scene load_steps=27 format=3 uid="uid://r8e5vdmp0k17"]
 
 [ext_resource type="Script" uid="uid://bit6j1i1d5r1a" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_uwrxv"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://b8fq8sgkmu4dx" path="res://graphics/objects/green car.png" id="10_vtaks"]
 [ext_resource type="Texture2D" uid="uid://b778fphjcav0" path="res://graphics/objects/light.png" id="12_dinhu"]
 [ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="13_kvuet"]
+[ext_resource type="AudioStream" uid="uid://bhlpytpnexjr2" path="res://audio/bgm.mp3" id="14_trtic"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
 size = Vector2(9.75, 654)
@@ -422,6 +423,12 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("13_kvuet")
 text = "time: 0"
 horizontal_alignment = 1
+
+[node name="Bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_trtic")
+volume_db = -20.0
+autoplay = true
+parameters/looping = true
 
 [connection signal="body_entered" from="Boundary/FinishArea" to="." method="_on_finish_area_body_entered"]
 [connection signal="timeout" from="Timer/CarTimer" to="." method="_on_car_timer_timeout"]

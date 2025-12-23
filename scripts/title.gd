@@ -2,7 +2,6 @@ extends Control
 
 func _ready() -> void:
 	$Label2.text = "Record time: " + str(Global.score)
-	#Global.score = 0
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
