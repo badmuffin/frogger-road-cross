@@ -13,7 +13,8 @@ func _ready() -> void:
 		direction.x   = 1
 		$Sprite2D.flip_h = true
 	$Sprite2D.texture = colors.pick_random()
-
+	$AudioStreamPlayer2D.play()
+	
 func _process(delta: float) -> void:
 	position += direction * speed * delta
 
