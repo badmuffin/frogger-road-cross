@@ -2,6 +2,8 @@
 
 A simple road crossing game made with the Godot game engine.
 
+https://github.com/user-attachments/assets/251cf145-3a20-462e-888c-406c74716909
+
 ## About
 
 This is a classic-style Frogger game where players navigate through traffic and obstacles to reach their destination. The game features:
@@ -10,6 +12,7 @@ This is a classic-style Frogger game where players navigate through traffic and 
 - Multiple vehicle types and obstacles
 - Retro-style graphics and audio
 - Responsive controls for keyboard
+
 
 ## Controls
 
